@@ -12,11 +12,7 @@ El proyecto está organizado por paquetes o carpetas que corresponden a diferent
 
 
 
-## Instalación y Ejecución
-
-
-
-1\. Clona el repositorio:
+## Descargar respositorio
 
 ```bash
 
