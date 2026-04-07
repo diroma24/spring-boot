@@ -20,5 +20,4 @@ El proyecto está organizado por paquetes o carpetas que corresponden a diferent
 
 ```bash
 
-git clone \[https://github.com/diroma24/Ejercicios.git](https://github.com/diroma24/Ejercicios.git)
-
+git clone https://github.com/diroma24/spring-boot.git
