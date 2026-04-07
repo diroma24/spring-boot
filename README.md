@@ -1,4 +1,4 @@
-\# Ejercicios Spring Boot - DA2D1A
+# Ejercicios Spring Boot - DA2D1A
 
 
 
@@ -10,13 +10,13 @@ El proyecto está organizado por paquetes o carpetas que corresponden a diferent
 
 
 
-\## Instalación y Ejecución
+## Instalación y Ejecución
 
 
 
 1\. Clona el repositorio:
 
-&#x20;  ```bash
+```bash
 
-&#x20;  git clone \[https://github.com/diroma24/Ejercicios.git](https://github.com/diroma24/Ejercicios.git)
+git clone \[https://github.com/diroma24/Ejercicios.git](https://github.com/diroma24/Ejercicios.git)
 
