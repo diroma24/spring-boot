@@ -7,7 +7,7 @@ Este repositorio contiene la colección de ejercicios desde el ejercicio 1 al 6 
 
 
 El proyecto está organizado por paquetes o carpetas que corresponden a diferentes ejercicios:
-- minima: contiene un ejercicio realizado en clase
+- Actividades: carpeta con actividades varias
 - Ejercicios: carpeta con los ejercicios del 1 al 6
 
 
