@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" th:href="@{/css/evangelion.css}">
+</head>
+<body>
+<h1>Página principal</h1>
+<p>Registro de empleados de NERV.</p>
+<nav>
+    <ul>
+        <li>
+            <a th:href="@{/personas}">[ 01 ] LISTADO DE EMPLEADOS</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas/una}">[ 02 ] DETALLES DE UN EMPLEADO</a>
+        </li>
+        <li>
+            <a th:href="@{/prediccion}">[ 03 ] MONITORIZACIÓN CLIMÁTICA</a>
+        </li>
+    </ul>
+</nav>
+<hr>
+<p style="color: var(--eva-green); font-size: 0.8em;">STATUS: ALL SYSTEMS OPERATIONAL</p>
+</body>
+</html>

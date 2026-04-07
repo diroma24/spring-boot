@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" th:href="@{/css/evangelion.css}">
+</head>
+<body>
+<h1>Página principal</h1>
+<p>Registro de empleados de NERV.</p>
+<nav>
+    <ul>
+        <li>
+            <a th:href="@{/personas}">Ver el listado de empleados</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas/una}">Ver detalles de un empleado</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>NERV - Weather Monitor</title>
+    <link rel="stylesheet" th:href="@{/css/evangelion.css}">
+    <style>
+        .uv-verde { color: var(--eva-green) !important; font-weight: bold; }
+        .uv-naranja { color: var(--eva-orange) !important; font-weight: bold; }
+        .uv-rojo { color: var(--eva-red) !important; font-weight: bold; }
+
+        .weather-icon { filter: sepia(100%) saturate(300%) hue-rotate(5deg); width: 50px; }
+    </style>
+</head>
+<body>
+<h1>MAGI SYSTEM: METEO PREDICTION</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <th th:each="dia : ${semana}" th:text="${#temporals.format(dia.fecha, 'dd/MM')}">Fecha</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:each="dia : ${semana}">
+            <img th:src="${dia.getUrlImagen()}" class="weather-icon" alt="clima">
+        </td>
+    </tr>
+    <tr>
+        <td th:each="dia : ${semana}">
+            Prob: <span th:text="${dia.probabilidadPrecipitacion} + '%'">0%</span>
+        </td>
+    </tr>
+    <tr>
+        <td th:each="dia : ${semana}">
+            Min: [[${dia.tempMin}]]º / Max: [[${dia.tempMax}]]º
+        </td>
+    </tr>
+    <tr>
+        <td th:each="dia : ${semana}">
+            UV: <span th:text="${dia.nivelUV}"
+                      th:class="${dia.nivelUV <= 1 ? 'uv-verde' : (dia.nivelUV <= 3 ? 'uv-naranja' : 'uv-rojo')}">
+                        0
+                    </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<nav>
+    <ul>
+        <li><a th:href="@{/}">Cerrar terminal</a></li>
+    </ul>
+</nav>
+</body>
+</html>

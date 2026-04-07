@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Personas</title>
+    <link rel="stylesheet" th:href="@{/css/evangelion.css}">
+</head>
+<body>
+<h1>Listado de empleados</h1>
+<p>Empleados actuales: 1023</p>
+<nav>
+    <ul>
+        <li>
+            <a th:href="@{/}">Volver al inicio</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas/una}">Ver detalles de un empleado</a>
+        </li>
+    </ul>
+</nav>
+<hr>
+<table>
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Apellidos</th>
+        <th>DNI</th>
+        <th>Edad</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="persona : ${lista}">
+        <td th:text="${persona.nombre}">Nombre</td>
+        <td th:text="${persona.apellidos}">Apellidos</td>
+        <td th:text="${persona.dni}">DNI</td>
+        <td th:text="${persona.getEdad()}">0</td>
+    </tr>
+    </tbody>
+</table>
+<br>
+<nav>
+    <ul>
+        <li>
+            <a th:href="@{/}">Volver al inicio</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas/una}">Ver detalles de un empleado</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

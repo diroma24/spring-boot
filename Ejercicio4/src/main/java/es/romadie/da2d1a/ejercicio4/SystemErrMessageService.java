@@ -1,0 +1,11 @@
+package es.romadie.da2d1a.ejercicio4;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class SystemErrMessageService implements MessageService {
+    @Override
+    public void showMessage(String message) {
+        System.err.println("[ERR-LOG]: " + message);
+    }
+}

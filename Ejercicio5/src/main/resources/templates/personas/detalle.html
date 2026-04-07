@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalle Persona</title>
+    <link rel="stylesheet" th:href="@{/css/evangelion.css}">
+</head>
+<body>
+<h1>Datos de la persona</h1>
+<ul>
+    <li><strong>Nombre:</strong> <span th:text="${p.nombre}">Nombre</span></li>
+    <li><strong>Apellidos:</strong> <span th:text="${p.apellidos}">Apellidos</span></li>
+    <li><strong>DNI:</strong> <span th:text="${p.dni}">DNI</span></li>
+    <li><strong>Fecha Nacimiento:</strong> <span th:text="${p.fechaNacimiento}">01/01/2000</span></li>
+    <li><strong>Edad actual:</strong> <span th:text="${p.getEdad()}">0</span> años</li>
+</ul>
+<br>
+<nav>
+    <ul>
+        <li>
+            <a th:href="@{/}">Volver al inicio</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas}">Ver lista de empleados</a>
+        </li>
+
+        <li>
+            <a th:href="@{/personas/una}">Ver detalles de otro empleado</a>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
